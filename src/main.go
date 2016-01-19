@@ -44,9 +44,11 @@ func main() {
 
 	log.Printf("main: found %d neighbors", len(scanner.table))
 
-	fmt.Printf("%-15s %-14s %-6s %-11s %-7s %6s\n", "Neighbor", "VRF", "ASN", "State", "Uptime", "Prefixes")
+	format := "%-15s %-14s %6s %-11s %-6s %8s\n"
+
+	fmt.Printf(format, "Neighbor", "VRF", "ASN", "State", "Uptime", "Prefixes")
 	for _, n := range scanner.table {
-		fmt.Printf("%-15s %-14s %-6s %-11s %-7s %6s\n", n.addr, n.vrf, n.remoteAs, n.state, n.uptime, n.prefixCount)
+		fmt.Printf(format, n.addr, n.vrf, n.remoteAs, n.state, n.uptime, n.prefixCount)
 	}
 }
 

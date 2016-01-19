@@ -19,6 +19,8 @@ go run cisco-vrf-bgp-neigh.go < output.txt
 Example
 =======
 
+NOTICE: Addresses and ASNs purposely omitted below.
+
 ```
 C:\tmp\devel\cisco-vrf-bgp-neigh>go run src\main.go < output2.txt
 2016/01/19 15:41:10 main: reading from stdin
