@@ -1,4 +1,11 @@
 cisco-vrf-bgp-neigh.go
+======================
+
+Parser for cisco command output:
+
+```
+show bgp vpnv4 unicast all neighbors
+```
 
 Usage
 =====
@@ -14,6 +21,7 @@ go run cisco-vrf-bgp-neigh.go < output.txt
 Example
 =======
 
+```
 C:\tmp\devel\cisco-vrf-bgp-neigh>go run src\main.go < output2.txt
 2016/01/19 15:41:10 main: reading from stdin
 2016/01/19 15:41:10 main: reading from stdin: done: 1755 lines
@@ -37,6 +45,7 @@ Neighbor        VRF            ASN    State       Uptime  Prefixes
 1.1.1.1         --             11111  Established 13w0d     3451
 
 C:\tmp\devel\cisco-vrf-bgp-neigh>
+```
 
 END
 
