@@ -10,13 +10,11 @@ show bgp vpnv4 unicast all neighbors
 Usage
 =====
 
-1. Save output of command 'show bgp vpnv4 unicast all neighbors' to a file.
-
-For instance, 'output.txt'.
-
-2. Feed that output file to cisco-vrf-bgp-neigh.go:
-
+0. Save output of command 'show bgp vpnv4 unicast all neighbors' to a file. For instance, 'output.txt'.
+0. Feed that output file to cisco-vrf-bgp-neigh.go:
+```
 go run cisco-vrf-bgp-neigh.go < output.txt
+```
 
 Example
 =======
